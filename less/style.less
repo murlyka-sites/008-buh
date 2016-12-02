@@ -500,11 +500,31 @@ h3 {
 		}
 
 		&-inner {
+			position: relative;
 			display: table-cell;
 			height: 139px;
 			padding: 0 80px;
 			text-align: center;
 			vertical-align: middle;
+			
+			&:after,
+			&:before {
+				content: "";
+				position: absolute;
+				z-index: 5;
+			}
+
+			&:before {
+				.i-qo();
+				top: -24px;
+				left: 6px;
+			}
+
+			&:after {
+				.i-qc();
+				bottom: -26px;
+				right: 6px;
+			}
 		}
 	}
 
