@@ -1,0 +1,22 @@
+{
+  "name": "008-buh",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Millok Murlyka"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "fancybox": "^2.1.5",
+    "jquery.maskedinput": "^1.4.1"
+  }
+}

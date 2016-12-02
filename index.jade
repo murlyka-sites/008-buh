@@ -1,0 +1,39 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="SKYPE_TOOLBAR", content="SKYPE_TOOLBAR_PARSER_COMPATIBLE")
+		meta(content="telephone=no", name="format-detection")
+		//- meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		title
+			| Частный бухгалтер с 20-летним стажем
+		link(rel="stylesheet", href="css/bootstrap.css?v=2")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css")
+		link(rel="stylesheet", href="css/style.css")
+	body
+		include jade/header.jade
+		include jade/main.jade
+		include jade/owner.jade
+		include jade/action.jade
+		include jade/personal.jade
+		include jade/price.jade
+		include jade/action.jade
+		include jade/foo.jade
+		include jade/copy.jade
+		.hidden
+			.gradient.popup#call
+				h3.popup__title
+					| Обратный звонок
+				form(method="POST")
+					input.popup__input(name="name", type="text", placeholder="Имя", required)
+					input.popup__input.input--phone(name="phone", type="text", placeholder="Телефон", required)
+					button.btn-sonne.popup__btn(type="submit")
+						| Отправить
+			.gradient.popup#success
+				h3.popup__title.popup__title--success
+					| Форма успешно отправлена!
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js")
+		script(src="js/jquery.form.min.js")
+		script(src="js/main.js")
